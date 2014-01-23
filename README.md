@@ -1,7 +1,7 @@
 MHNibLoading
 ============
 
-MHNibLoading aims to eliminate some of boilerplate code commonly seen when loading UIViews from a nib on disk. The library is most useful when the UIView subclass and it's corresponding nib file have the same name.
+MHNibLoading aims to eliminate some of boilerplate code commonly seen when loading UIViews from a nib on disk. The library is most useful when the UIView subclass and it's corresponding nib file have the same name.  It provides category methods on UIView to load either individual UIView instances or UINib instances from on-disk *.xib files. 
 
 # Usage
 
