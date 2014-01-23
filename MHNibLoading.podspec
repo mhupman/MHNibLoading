@@ -1,25 +1,20 @@
-git_tag = "0.0.1"
+git_tag = '0.1.0'
 
 Pod::Spec.new do |s|
 
   s.name         = "MHNibLoading"
   s.version      = git_tag
-  s.summary      = ""
+  s.summary      = "Simple UIView category for creating instances from nibs"
 
   s.description  = <<-DESC
-                   A longer description of MHNibLoading in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   MHNibLoading aims to eliminate some of boilerplate code commonly seen when loading UIViews from a nib on disk. The library is most useful when the UIView subclass and it's corresponding nib file have the same name.  It provides category methods on UIView to load either individual UIView instances or UINib instances from on-disk *.xib files. 
                    DESC
 
   s.homepage     = "https://github.com/mhupman/MHNibLoading"
   s.license      = 'MIT'
   s.author       = { "mhupman" => "mhupman@citrrus.com" }
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/mhupman/MHNibLoading.git", :commit => "c92c7111d582e286ca0fea30c9b784c86ad47b7a" }
+  s.source       = { :git => "https://github.com/mhupman/MHNibLoading.git", :tag => git_tag }
   s.source_files = s.name
   s.requires_arc = true
 end
